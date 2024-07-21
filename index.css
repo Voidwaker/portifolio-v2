@@ -1,6 +1,6 @@
 /*header*/
 
-.ul, li{
+.ul, li, a{
     list-style: none;
     margin: 0;
     padding: 10px;
@@ -32,3 +32,47 @@
 
 
 /*section*/
+
+/* projects */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background: lightgray;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; 
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2, .card-content p, .card-content a, .card-content a:hover {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: lightgray;
+    text-decoration: none;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
