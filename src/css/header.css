@@ -1,0 +1,76 @@
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.5s ease-out;
+}
+
+.primary-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-header ul li {
+    margin: 0 1.5rem;
+}
+
+.primary-header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.primary-header ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007BFF;
+    transition: width 0.3s ease;
+}
+
+.primary-header ul li a:hover {
+    color: #007BFF;
+}
+
+.primary-header ul li a:hover::before {
+    width: 100%;
+}
+
+section {
+    padding: 4rem 1rem;
+    margin-top: 5rem;
+}
+
+#about-me {
+    background: lightblue;
+}
+
+#projects {
+    background: black;
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
